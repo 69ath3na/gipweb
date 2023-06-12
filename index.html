@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Blended</title>
+   
+    <link rel="stylesheet" href="style.css">
+    <link
+            rel="icon" type="image/x-icon" href="img/icon.ico"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="https://kit.fontawesome.com/4ed11f936e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="img/giplogofinalwobg.png" alt="Logo" ></a>
+        </div>    <link rel="stylesheet" type="text/css" href="styles.css">
+
+        <nav class="menu">
+            <ul>
+                <li><a id="about-link" href="#about">ABOUT</a></li>
+                <li><a id="contact-link" href="#contact">CONTACT</a></li>
+                <li><a href="recipes.html">INSPIRATION</a></li>
+            </ul>
+        </nav>
+        <div id="menu">
+          <div id="menu-bar" onclick="menuOnClick()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </div>
+          <nav class="nav" id="nav">
+            <ul>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+              <li><a href="recipes.html">INSPIRATION</a></li>
+            </ul>
+          </nav> 
+        </div>
+        
+        <div class="menu-bg" id="menu-bg"></div>
+    </header>
+
+    <div class="blue-background">
+      <div class="content">
+        <img src="img/giplogofinalwobg.png" alt="logo" class="image-overlay">
+        <p class="text">Elevating the art of mocktails.</p>
+      </div>
+    </div>
+    
+    <div class="recipes-container">
+      <h1>CHECK OUT THE NEW INSPIRATION!</h1>
+      <div class="line"></div>
+      <div class="products">
+          <div class="product water">
+              <h3>Watermelon Man</h3>
+          </div>
+          <div class="product cherry">
+              <h3>Cherry Bomb</h3>
+          </div>
+          <div class="product mojito">
+              <h3>Strawberry Moijto</h3>
+          </div>
+      </div>
+
+      <a href="recipes.html" class="recipe-link">ALL INSPIRATION</a>
+
+  </div>
+
+  <div class="goal-container" id="about">
+      <div class="text">
+          <h1>OUR GOAL...</h1>
+          <p>...is to provide a range of mocktail and cocktail recipes to ensure inclusivity and enjoyment for
+              all.
+
+              <br>
+              <br>
+
+              We aim to normalize the practice of offering alcohol-free options at events and empower our
+              customers to create exceptional drink experiences.
+          </p>
+      </div>
+      <img src="img/illustratie.png" alt="">
+  </div>
+
+  <div class="contact-container" id="contact">
+      <h1>Subscribe</h1>
+      <h3>Don't miss out on our newsletter!</h3>
+      <form action="">
+          <input class="text-form" type="text" placeholder="Your e-mail here..." required>
+          <input class="submit" type="submit" value="SUBSCRIBE">
+      </form>
+      <div class="contact-line"></div>
+      <h3>Find us on other platforms!</h3>
+      <div class="socials-wrapper">
+          <a href="https://instagram.com/blendedmocktails?igshid=NTc4MTIwNjQ2YQ==" class="boxes">
+              <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://youtube.com/@blendedmocktails" class="boxes">
+              <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="https://www.tiktok.com/@blendedmocktails?is_from_webapp=1&sender_device=pc" class="boxes">
+              <i class="fa-brands fa-tiktok"></i>
+          </a>
+      </div>
+  </div>
+</main>
+</body>
+
+<script>
+const aboutLink = document.getElementById('about-link');
+aboutLink.addEventListener('click', (event) => {
+  event.preventDefault();
+  const aboutSection = document.getElementById('about');
+  aboutSection.scrollIntoView({ behavior: 'smooth' });
+});
+
+const contactLink = document.getElementById('contact-link');
+contactLink.addEventListener('click', (event) => {
+  event.preventDefault();
+  const contactSection = document.getElementById('contact');
+  contactSection.scrollIntoView({ behavior: 'smooth' });
+});
+
+  function menuOnClick() {
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("nav-mobile");
+  document.getElementById("nav").classList.toggle("nav");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+}
+</script>
+
+</html>
